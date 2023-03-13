@@ -11,7 +11,7 @@ jobs:
     env:
       MONGODB_CLUSTER_ADDRESS: kukucluster0.pymexa6.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
-      MONGODB_PASSWORD: kuku666
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     environment: testing
     runs-on: ubuntu-latest
